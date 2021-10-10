@@ -29,7 +29,7 @@
             <label for="email">Email</label>
             <input type="email" id="email" formControlName="email" class="form-control">
             <span *ngIf="!signupForm.get('projectData.email').valid && signupForm.get('projectData.email').touched">
-              <span *ngIf="signupForm.get('projectData.email').errors['required']">This field is required</span>
+              <span>Please enter a valid email!</span>
             </span>
           </div>
         </div>
